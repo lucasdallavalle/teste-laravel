@@ -1,0 +1,23 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.modal{
+    .modal-dialog {
+        margin-top: 80px;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        top: 0vh;
+        left: 0vw;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+}
